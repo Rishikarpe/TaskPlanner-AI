@@ -1,37 +1,42 @@
-# TaskPlanner-AI
-An agentic task planning assistant using LangGraph, powered by local LLMs (via Ollama), vector memory, and integrated AI tools
+# 🧠 TaskPlanner-AI
 
-📌 Features
-✅ Multi-agent system using LangGraph
+A LangGraph-based intelligent agent system that:
+- 🎯 Plans tasks based on a user goal
+- 🤖 Executes them using a local LLM (Mistral 7B via Ollama)
+- 🧪 Evaluates the results step-by-step
 
-🧠 Planner → Executor → Evaluator agent workflow
+Built using:
+- 🧩 LangGraph
+- 🧠 Local LLMs (via Ollama)
+- 🌐 Streamlit for UI
 
-📚 Vector memory (FAISS + Ollama Embeddings) to recall past tasks
+---
 
-🤖 Local LLMs via Ollama (e.g., Mistral 7B)
+## ✅ Prerequisites
 
-🧰 Tool integrations:
+To run this project locally with **Mistral 7B**, follow these steps:
 
-Python expression evaluator
+### 1. Install Docker
 
-English-to-Hindi translation
+- Download and install Docker from:  
+  👉 https://www.docker.com/products/docker-desktop  
+- Ensure Docker is running.
 
-DuckDuckGo web search (no API key)
+---
 
-🔁 Retry loop for failed or low-quality completions
+### 2. Install Ollama
 
-🖥️ Runs completely offline (optional)
+Install Ollama (used to run local LLMs):
 
-EXAMPLE:
-🎯 Describe your goal: Plan a home workout routine
 
-✅ Subtasks:
-1. Decide on workout goals
-2. Choose workout days
-3. Pick exercises for each day
-4. Schedule warm-ups and cooldowns
+###3. Pull the Mistral 7B Model:
+ollama pull mistral 
 
-⚙️ Execution:
-- For each subtask, the agent provides actionable suggestions or uses tools if required.
-- Failed outputs are re-evaluated and re-tried.
+###3. Run Ollama:
+ollama serve
 
+###4. Install dependencies
+pip install -r requirements.txt
+
+###5. Start the app
+streamlit run ui/app.py
