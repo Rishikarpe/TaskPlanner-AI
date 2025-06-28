@@ -28,15 +28,22 @@ To run this project locally with **Mistral 7B**, follow these steps:
 
 Install Ollama (used to run local LLMs):
 
+---
 
-###3. Pull the Mistral 7B Model:
+### 3. Pull the Mistral 7B Model:
 ollama pull mistral 
 
-###3. Run Ollama:
+---
+
+### 4. Run Ollama:
 ollama serve
 
-###4. Install dependencies
+---
+
+### 5. Install dependencies
 pip install -r requirements.txt
 
-###5. Start the app
+---
+
+### 6. Start the app
 streamlit run ui/app.py
