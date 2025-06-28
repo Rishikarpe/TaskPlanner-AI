@@ -1,15 +1,8 @@
 from workflows.graph_flow import build_graph
-from memory.vector_store import store_result, search_similar_tasks
+from memory.vector_store import store_result
 
 if __name__ == "__main__":
     goal = input("🎯 Describe your goal: ")
-    
-    # Optional: Retrieve similar tasks from memory
-    similar = search_similar_tasks(goal)
-    if similar:
-        print("\n🧠 Similar Past Tasks:")
-        for i, doc in enumerate(similar, 1):
-            print(f"{i}. {doc.metadata['task']} → {doc.metadata['verdict']}")
 
     # Run the agentic workflow
     state = {"goal": goal}

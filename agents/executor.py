@@ -1,5 +1,3 @@
-# agents/executor.py
-
 from langchain_ollama import OllamaLLM
 from langchain_core.prompts import PromptTemplate
 from langchain.agents import Tool, initialize_agent
@@ -12,7 +10,7 @@ from tools.web_search import search_web
 
 # LLMs
 llm_suggester = OllamaLLM(model="mistral")
-llm_tool_user = OllamaLLM(model="mistral")  # ✅ Replaces deprecated Ollama
+llm_tool_user = OllamaLLM(model="mistral") 
 
 # Prompt-only executor
 executor_prompt = PromptTemplate(
