@@ -1,0 +1,6 @@
+langgraph
+langchain
+langchain-community
+langchain-ollama
+faiss-cpu
+duckduckgo-search
