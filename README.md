@@ -50,7 +50,8 @@ streamlit run ui/app.py
 
 ---
 
-#OUTPUT
+# OUTPUT
+
 ![Thinking](https://github.com/user-attachments/assets/b2ce0b51-16d7-4c7e-b509-a7cf3445ca10)
 ![Output1](https://github.com/user-attachments/assets/d889063e-de28-4445-8db4-95c1d9b1efbf)
 ![Output2](https://github.com/user-attachments/assets/d499b2a9-270f-41f3-8ba2-0388ac6cae5a)
